@@ -10,6 +10,7 @@
 		EDCEBE1C1C3BF8C100B7115E /* MemoizedSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCEBE1B1C3BF8C100B7115E /* MemoizedSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDCEBE231C3BF8C100B7115E /* MemoizedSelector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCEBE181C3BF8C100B7115E /* MemoizedSelector.framework */; };
 		EDCEBE281C3BF8C100B7115E /* MemoizedSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCEBE271C3BF8C100B7115E /* MemoizedSelectorTests.swift */; };
+		EDCEBE331C3BF98900B7115E /* MemoizedSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCEBE321C3BF98900B7115E /* MemoizedSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EDCEBE221C3BF8C100B7115E /* MemoizedSelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoizedSelectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCEBE271C3BF8C100B7115E /* MemoizedSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoizedSelectorTests.swift; sourceTree = "<group>"; };
 		EDCEBE291C3BF8C100B7115E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCEBE321C3BF98900B7115E /* MemoizedSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoizedSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				EDCEBE1B1C3BF8C100B7115E /* MemoizedSelector.h */,
 				EDCEBE1D1C3BF8C100B7115E /* Info.plist */,
+				EDCEBE321C3BF98900B7115E /* MemoizedSelector.swift */,
 			);
 			path = MemoizedSelector;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCEBE331C3BF98900B7115E /* MemoizedSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		EDCEBE2D1C3BF8C100B7115E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MemoizedSelector.MemoizedSelector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		EDCEBE2E1C3BF8C100B7115E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

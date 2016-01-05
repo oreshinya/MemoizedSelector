@@ -13,12 +13,12 @@ public class MemoizedSelector<Arg,Result> {
     private var lastArg: Arg? = nil
     private var lastResult: Result? = nil
     
-    init(checkChanged: (Arg, Arg) -> Bool, selector: Arg -> Result) {
+    public init(checkChanged: (Arg, Arg) -> Bool, selector: Arg -> Result) {
         self.checkChanged = checkChanged
         self.selector = selector
     }
     
-    func exec(arg: Arg) -> Result {
+    public func exec(arg: Arg) -> Result {
         if shouldExec(arg) {
             lastArg = arg
             lastResult = selector(arg)

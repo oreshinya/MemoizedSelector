@@ -1,5 +1,6 @@
 # MemoizedSelector
 Memoized selector on Swift for Redux(e.g.: [ReduxKit](https://github.com/ReduxKit/ReduxKit)).
+Inspired by [rackt/reselect](https://github.com/rackt/reselect).
 
 ## Installation
 

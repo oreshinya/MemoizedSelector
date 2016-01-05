@@ -1,4 +1,5 @@
 # MemoizedSelector
+【WIP】
 Memoized selector on Swift for Redux(e.g.: [ReduxKit](https://github.com/ReduxKit/ReduxKit)).
 
 ## Installation

@@ -383,6 +383,7 @@
 				EDCEBE2E1C3BF8C100B7115E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDCEBE2F1C3BF8C100B7115E /* Build configuration list for PBXNativeTarget "MemoizedSelectorTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +392,7 @@
 				EDCEBE311C3BF8C100B7115E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
